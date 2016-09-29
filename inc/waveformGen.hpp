@@ -10,15 +10,21 @@ class WaveformGen {
 	
 public:
 
-	WaveformGen(string filePath, string dacScalePath, string dacOutPath);
-	int getNextSample();
-	void generateNextSample();
+  WaveformGen(string signalFilePath, 
+              int adcResolution, 
+              int adcVoltage, 
+              string adcInPath, 
+              int dacResolution,
+              string dacOutPath);
+  int getNextSample();
+  void generateNextSample();
+
 private:
 	
-	vector<int> samples;
-	vector <int>::iterator it;
-	int sampleIndex;
-	string outputFilePath;
+  vector<int> samples;
+  vector <int>::iterator it;
+  int sampleIndex;
+  string outputFilePath;
 };
 
 #endif

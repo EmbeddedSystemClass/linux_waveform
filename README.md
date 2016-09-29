@@ -1,4 +1,4 @@
-raspberry_waveform
+linux_waveform
 ==================
 
-Waveform generator for raspberry based on MCP4725
+Waveform generator for Linux based on MCP4716 and MCP3021
